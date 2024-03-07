@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-default: #ffffff;
+  --color-hover: #ffffff;
+}
+
+body {
+  visibility: hidden;
+  user-select: none;
+  white-space: nowrap;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 40;
+}
+
+#eye {
+  position: absolute;
+  font-size: 5;
+  top: 50.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #5bb894;
+
+}
+
+.eye-hover {
+  fill: #5bb894;
+}
+
+#hex::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  content: "\2B22";
+  color: rgba(0, 73, 45, 0.548);
+  font-size: 5.07vh;
+  text-shadow: #ffffff00 1px 0 10px;
+  -webkit-text-stroke: 1px #84ffd0
+}
+
+#options-wrapper {
+  position: absolute;
+  top: calc(48.4%);
+  left: calc(50% + 20pt);
+}
+
+.option-container {
+  color: var(--color-default);
+  display: flex;
+  flex-direction: row;
+  justify-content: Flex start;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 48, 30, 0.479) 0%,
+    rgba(0, 73, 45, 0.384) 66%,
+    rgba(0, 61, 38, 0.438) 100%
+  );
+  border-radius: 5px;
+  font-size: 15pt;
+  line-height: 50pt;
+  font-family: 'Nunito';
+  vertical-align: middle;
+  transition: 300ms;
+  transform-origin: left top;
+  scale: 1;
+  height: 25pt;
+  width: 200pt;
+  margin: 5pt;
+  margin-top: 6;
+}
+
+.option-container:hover {
+  background: #3a9471b7;
+  border-radius: 5px;
+  transform-origin: left top;
+  box-shadow: 0px 0px 15px 3px #84ffd0b4;
+  color: var(--color-default);
+  margin-left: 4pt;
+}
+
+.option-icon {
+  font-size: 15pt;
+  line-height: 22pt;
+  width: 14pt;
+  margin: 7pt;
+  padding-left: 3px;
+  padding-right: 3.5px;
+  color:  #84ffd0;
+}
+
+.option-label {
+  font-weight: 500;
+}
